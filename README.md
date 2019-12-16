@@ -1,4 +1,4 @@
-# Jimbob's Rust Nickel!
+# Jimbob's Rusty Nickel!
 
 ## Setting up Cargo
 Cargo is a popular package manager for Rust projects.
