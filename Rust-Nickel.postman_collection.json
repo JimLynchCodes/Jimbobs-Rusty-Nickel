@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "b7f55281-e7fb-48af-9f08-f4e4f2d1d3a8",
+		"name": "Rust-Nickel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "First-Rust-Nickel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2f64123a-36be-4c99-be93-8a69ba0d79b2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.message).to.eql('Hello! Sincerely, Jimbob\\'s Rusty Nickel');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:6767",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "6767"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
