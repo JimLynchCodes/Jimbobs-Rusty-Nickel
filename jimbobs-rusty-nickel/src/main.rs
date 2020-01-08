@@ -8,7 +8,7 @@ fn main() {
 
     server.utilize(router! {
         get "**" => |_req, _res| {
-            "{\n\tmessage: \"Hello! Sincerely, Jimbob's Rusty Nickel\"\n}"
+            "{\n\t\"message\": \"Hello! Sincerely, Jimbob's Rusty Nickel\"\n}"
         }
     });
 
